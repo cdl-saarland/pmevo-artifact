@@ -1,0 +1,11 @@
+.vagrant
+
+*.so
+*.o
+**/build/**
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.python-version

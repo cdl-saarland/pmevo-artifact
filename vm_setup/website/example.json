@@ -1,0 +1,44 @@
+[
+    {
+        "category": "Results for SKL",
+        "caption": "Prediction Accuracy for PMEvo",
+        "content": [
+            {
+                "kind": "image",
+                "path": "foo1.png"
+            },
+            {
+                "kind": "table",
+                "rows": [["MAPE", "X%"], ["Pearson CC", "Y"], ["Spearman CC", "Z"]]
+            }
+        ]
+    },
+    {
+        "category": "Results for SKL",
+        "caption": "Prediction Accuracy for IACA",
+        "content": [
+            {
+                "kind": "image",
+                "path": "foo2.png"
+            },
+            {
+                "kind": "table",
+                "rows": [["MAPE", "X%"], ["Pearson CC", "Y"], ["Spearman CC", "Z"]]
+            }
+        ]
+    },
+    {
+        "category": "Results for ZEN",
+        "caption": "Prediction Accuracy for PMEvo",
+        "content": [
+            {
+                "kind": "image",
+                "path": "bar.png"
+            },
+            {
+                "kind": "table",
+                "rows": [["MAPE", "X%"], ["Pearson CC", "Y"], ["Spearman CC", "Z"]]
+            }
+        ]
+    }
+]

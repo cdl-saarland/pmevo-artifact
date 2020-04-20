@@ -1,0 +1,13 @@
+*.pyc
+*.txt
+*~
+*.png
+*.jpg
+*.pdf
+#*#
+!offsets.txt
+timing/
+common/
+other/
+*_old.*
+saved/

@@ -1,0 +1,28 @@
+architecture:
+    instructions:
+        add
+        sub
+        mul
+        div
+    ports: 4
+
+experiment:
+    instructions:
+        add
+    cycles: 0.25
+
+experiment:
+    instructions:
+        sub
+    cycles: 0.25
+
+experiment:
+    instructions:
+        mul
+    cycles: 1.25
+
+experiment:
+    instructions:
+        div
+    cycles: 4.0
+

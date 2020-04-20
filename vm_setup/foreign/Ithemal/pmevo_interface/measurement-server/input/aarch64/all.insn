@@ -1,0 +1,390 @@
+	abs	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	abs	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	add	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	add	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	add	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	add	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), asr 3
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 2
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsr 4
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtb
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxth
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxth 3
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw 2
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtb
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtb 3
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxth
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxth 3
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtw
+	add	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtw 3
+	add	((REG:W:G:64)), ((REG:R:G:64)), 8
+	addp	((REG:W:F:64)), ((REG:R:F:VEC)).2d
+	adds	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	adds	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 3
+	adds	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw
+	adds	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw 2
+	adds	((REG:W:G:64)), ((REG:R:G:64)), 40
+	addv	((REG:W:F:32)), ((REG:R:F:VEC)).4s
+	addv	((REG:W:F:8)), ((REG:R:F:VEC)).16b
+	and	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	and	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	and	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 7
+	and	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsr 8
+	and	((REG:W:G:64)), ((REG:R:G:64)), 2147483648
+	ands	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	ands	((REG:W:G:64)), ((REG:R:G:64)), 7
+	asr	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	asr	((REG:W:G:64)), ((REG:R:G:64)), 2
+	bfi	((REG:W:G:64)), ((REG:R:G:64)), 16, 16
+	bic	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	bic	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	bic	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 8
+	bic	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsr 8
+	bics	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	bif	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	bit	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	bsl	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	clz	((REG:W:G:64)), ((REG:R:G:64))
+	cmeq	((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b, #0
+	cmeq	((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	cmeq	((REG:R:F:VEC)).2s, ((REG:R:F:VEC)).2s, #0
+	cmeq	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	cmeq	((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	cmge	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	cmge	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, #0
+	cmge	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	cmgt	((REG:R:F:64)), ((REG:R:F:64)), #0
+	cmgt	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	cmgt	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, #0
+	cmgt	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	cmgt	((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h, #0
+	cmhi	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	cmhi	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	cmhi	((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	cmhs	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	cmn	((REG:R:G:64)), #1
+	cmn	((REG:R:G:64)), ((REG:R:G:64))
+	cmp	((REG:R:G:64)), ((REG:R:G:64))
+	cmp	((REG:R:G:64)), ((REG:R:G:64)), asr 2
+	cmp	((REG:R:G:64)), ((REG:R:G:64)), lsl 3
+	cmp	((REG:R:G:64)), ((REG:R:G:64)), lsr 3
+	cmp	((REG:R:G:64)), ((REG:R:G:32)), sxth
+	cmp	((REG:R:G:64)), ((REG:R:G:32)), sxtw
+	cmp	((REG:R:G:64)), ((REG:R:G:32)), sxtw 3
+	cmp	((REG:R:G:64)), ((REG:R:G:32)), uxtb
+	cmp	((REG:R:G:64)), ((REG:R:G:32)), uxth
+	cmp	((REG:R:G:64)), ((REG:R:G:32)), uxtw
+	cmp	((REG:R:G:64)), 624
+	dup	((REG:W:F:32)), ((REG:R:F:VEC)).s[0]
+	dup	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).d[0]
+	dup	((REG:W:F:VEC)).2d, ((REG:W:G:64))
+	dup	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).s[0]
+	eor	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	eor	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	eor	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), asr 63
+	eor	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 11
+	eor	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsr 30
+	eor	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), ror 18
+	eor	((REG:W:G:64)), ((REG:R:G:64)), 4
+	extr	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), 49
+	fabd	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fabd	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fabd	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fabd	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fabs	((REG:W:F:32)), ((REG:R:F:32))
+	fabs	((REG:W:F:64)), ((REG:R:F:64))
+	fabs	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fabs	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fadd	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fadd	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fadd	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fadd	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fcmeq	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fcmeq	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, 0
+	fcmeq	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, 0
+	fcmge	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fcmge	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fcmgt	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fcmgt	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, 0
+	fcmgt	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fcmgt	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, 0
+	fcmle	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, 0
+	fcmlt	((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d, 0
+	fcmlt	((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s, 0
+	fcmp	((REG:R:F:32)), #0.0
+	fcmp	((REG:R:F:32)), ((REG:R:F:32))
+	fcmp	((REG:R:F:64)), #0.0
+	fcmp	((REG:R:F:64)), ((REG:R:F:64))
+	fcmpe	((REG:R:F:32)), #0.0
+	fcmpe	((REG:R:F:32)), ((REG:R:F:32))
+	fcmpe	((REG:R:F:64)), #0.0
+	fcmpe	((REG:R:F:64)), ((REG:R:F:64))
+	fcvt	((REG:W:F:32)), ((REG:R:F:64))
+	fcvt	((REG:W:F:64)), ((REG:R:F:32))
+	fcvtas	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fcvtl	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2s
+	fcvtl2	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).4s
+	fcvtms	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fcvtms	((REG:W:G:64)), ((REG:W:F:32))
+	fcvtms	((REG:W:G:64)), ((REG:W:F:64))
+	fcvtmu	((REG:W:G:64)), ((REG:W:F:64))
+	fcvtn	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2d
+	fcvtn2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).2d
+	fcvtps	((REG:W:G:64)), ((REG:W:F:64))
+	fcvtpu	((REG:W:G:64)), ((REG:W:F:64))
+	fcvtzs	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fcvtzs	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2s
+	fcvtzs	((REG:W:G:64)), ((REG:W:F:32))
+	fcvtzs	((REG:W:G:64)), ((REG:W:F:64))
+	fcvtzu	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fcvtzu	((REG:W:G:64)), ((REG:W:F:32))
+	fcvtzu	((REG:W:G:64)), ((REG:W:F:64))
+	fdiv	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fdiv	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fdiv	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fdiv	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fmadd	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fmadd	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fmla	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fmla	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).d[0]
+	fmla	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fmls	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fmls	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fmov	((REG:W:F:32)), ((REG:R:F:32))
+	fmov	((REG:W:F:32)), 2.0e+1
+	fmov	((REG:W:F:64)), ((REG:R:F:64))
+	fmov	((REG:W:F:64)), ((REG:W:G:64))
+	fmov	((REG:W:F:64)), 1.0e+1
+	fmov	((REG:W:F:VEC)).2d, 1.0e+0
+	fmov	((REG:W:F:VEC)).4s, 1.0e+0
+	fmov	((REG:W:F:VEC)).d[1], ((REG:W:G:64))
+	fmov	((REG:W:G:64)), ((REG:W:F:64))
+	fmov	((REG:W:G:64)), ((REG:W:F:VEC)).d[1]
+	fmsub	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fmsub	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fmul	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fmul	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fmul	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fmul	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).d[0]
+	fmul	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fmul	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).s[1]
+	fneg	((REG:W:F:32)), ((REG:R:F:32))
+	fneg	((REG:W:F:64)), ((REG:R:F:64))
+	fneg	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fneg	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fnmadd	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fnmadd	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fnmsub	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fnmsub	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fnmul	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fnmul	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	frinta	((REG:W:F:64)), ((REG:R:F:64))
+	frintm	((REG:W:F:32)), ((REG:R:F:32))
+	frintm	((REG:W:F:64)), ((REG:R:F:64))
+	frintm	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2s
+	frintp	((REG:W:F:32)), ((REG:R:F:32))
+	frintp	((REG:W:F:64)), ((REG:R:F:64))
+	frintp	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	frintx	((REG:W:F:64)), ((REG:R:F:64))
+	frintz	((REG:W:F:32)), ((REG:R:F:32))
+	frintz	((REG:W:F:64)), ((REG:R:F:64))
+	frintz	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fsqrt	((REG:W:F:32)), ((REG:R:F:32))
+	fsqrt	((REG:W:F:64)), ((REG:R:F:64))
+	fsqrt	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fsqrt	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	fsub	((REG:W:F:32)), ((REG:R:F:32)), ((REG:R:F:32))
+	fsub	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	fsub	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	fsub	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	ins	((REG:W:F:VEC)).d[1], ((REG:R:F:VEC)).d[0]
+	ins	((REG:W:F:VEC)).d[1], ((REG:W:G:64))
+	ldr	((REG:W:F:128)), [((MEM:64)), ((MIMM:16))]
+	ldr	((REG:W:F:16)), [((MEM:64)), ((MIMM:16))]
+	ldr	((REG:W:F:32)), [((MEM:64)), ((MIMM:16))]
+	ldr	((REG:W:F:64)), [((MEM:64)), ((MIMM:16))]
+	ldr	((REG:W:F:8)), [((MEM:64)), ((MIMM:16))]
+	ldr	((REG:W:G:64)), [((MEM:64)), ((MIMM:16))]
+	ldrsb	((REG:W:G:64)), [((MEM:64)), ((MIMM:16))]
+	ldrsh	((REG:W:G:64)), [((MEM:64)), ((MIMM:16))]
+	ldrsw	((REG:W:G:64)), [((MEM:64)), ((MIMM:16))]
+	lsl	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	lsl	((REG:W:G:64)), ((REG:R:G:64)), 4
+	lsr	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	lsr	((REG:W:G:64)), ((REG:R:G:64)), 32
+	madd	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	mla	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	mla	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	mla	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	mneg	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	mov	((REG:W:F:VEC)).8b, ((REG:R:F:VEC)).8b
+	mov	((REG:W:G:64)), ((REG:R:G:64))
+	mov	((REG:W:G:64)), 2147483647
+	movi	((REG:W:F:64)), -256
+	movi	((REG:W:F:VEC)).16b, 0xdf
+	movi	((REG:W:F:VEC)).4s, 0
+	movi	((REG:W:F:VEC)).4s, 0x4, lsl 8
+	movi	((REG:W:F:VEC)).4s, 0xff, msl 8
+	movi	((REG:W:F:VEC)).8h, 0x4, lsl 8
+	movi	((REG:W:F:VEC)).8h, 0x53
+	movk	((REG:W:G:64)), 0x6c07, lsl 16
+	msub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	mul	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	mul	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	mul	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	mul	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	mvn	((REG:W:G:64)), ((REG:R:G:64))
+	mvn	((REG:W:G:64)), ((REG:R:G:64)), lsl 2
+	mvn	((REG:W:G:64)), ((REG:R:G:64)), lsr 6
+	mvni	((REG:W:F:VEC)).4h, 0xfe, lsl 8
+	mvni	((REG:W:F:VEC)).4s, 0
+	mvni	((REG:W:F:VEC)).4s, 0x7c, msl 8
+	mvni	((REG:W:F:VEC)).4s, 0x80, lsl 24
+	mvni	((REG:W:F:VEC)).8h, 0x40
+	neg	((REG:W:F:64)), ((REG:R:F:64))
+	neg	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	neg	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	neg	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	neg	((REG:W:G:64)), ((REG:R:G:64))
+	neg	((REG:W:G:64)), ((REG:R:G:64)), asr 2
+	neg	((REG:W:G:64)), ((REG:R:G:64)), lsl 3
+	neg	((REG:W:G:64)), ((REG:R:G:64)), lsr 2
+	negs	((REG:W:G:64)), ((REG:R:G:64))
+	not	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	orn	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	orr	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	orr	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	orr	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 7
+	orr	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsr 9
+	orr	((REG:W:G:64)), ((REG:R:G:64)), -4294967296
+	rev	((REG:W:G:64)), ((REG:R:G:64))
+	ror	((REG:W:G:64)), ((REG:R:G:64)), 14
+	sabd	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	saddl	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4h, ((REG:R:F:VEC)).4h
+	saddl2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	sbfiz	((REG:W:G:64)), ((REG:R:G:64)), 6, 32
+	sbfx	((REG:W:G:64)), ((REG:R:G:64)), 32, 32
+	scvtf	((REG:W:F:32)), ((REG:W:G:64))
+	scvtf	((REG:W:F:64)), ((REG:W:G:64))
+	scvtf	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	scvtf	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	sdiv	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	shl	((REG:W:F:64)), ((REG:R:F:64)), 3
+	shl	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, 56
+	shl	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2s, 1
+	shl	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, 8
+	smax	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	smax	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	smax	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	smaxv	((REG:W:F:16)), ((REG:R:F:VEC)).8h
+	smaxv	((REG:W:F:32)), ((REG:R:F:VEC)).4s
+	smaxv	((REG:W:F:8)), ((REG:R:F:VEC)).16b
+	smin	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	smin	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	smin	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	sminv	((REG:W:F:16)), ((REG:R:F:VEC)).8h
+	sminv	((REG:W:F:32)), ((REG:R:F:VEC)).4s
+	sminv	((REG:W:F:8)), ((REG:R:F:VEC)).16b
+	smulh	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	smull	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2s, ((REG:R:F:VEC)).2s
+	smull2	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	sshl	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	sshl	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	sshll ((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2s, 0
+	sshll ((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4h, 0
+	sshll ((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8b, 0
+	sshll2 ((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).4s, 0
+	sshll2 ((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).8h, 0
+	sshll2 ((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).16b, 0
+	sshr	((REG:W:F:64)), ((REG:R:F:64)), 3
+	sshr	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, 56
+	sshr	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2s, 10
+	sshr	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, 8
+	ssubl	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4h, ((REG:R:F:VEC)).4h
+	ssubl2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	ssubw2	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).4s
+	str	((REG:W:F:128)), [((MEM:64)), ((MIMM:16))]
+	str	((REG:W:F:16)), [((MEM:64)), ((MIMM:16))]
+	str	((REG:W:F:32)), [((MEM:64)), ((MIMM:16))]
+	str	((REG:W:F:64)), [((MEM:64)), ((MIMM:16))]
+	str	((REG:W:F:8)), [((MEM:64)), ((MIMM:16))]
+	str	((REG:W:G:64)), [((MEM:64)), ((MIMM:16))]
+	sub	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	sub	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	sub	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	sub	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	sub	((REG:W:G:64)), ((REG:R:G:64)), #1824
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), asr 63
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 3
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsr 8
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw 3
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtb
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtw
+	sub	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), uxtw 2
+	subs	((REG:W:G:64)), ((REG:R:G:64)), #1
+	subs	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	subs	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64)), lsl 5
+	subs	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:32)), sxtw
+	tbl	((REG:W:F:VEC)).16b, {((REG:R:F:VEC)).16b}, ((REG:R:F:VEC)).16b
+	tst	((REG:W:G:64)), ((REG:R:G:64))
+	tst	((REG:W:G:64)), -3
+	uaddl	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4h, ((REG:R:F:VEC)).4h
+	uaddl	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8b, ((REG:R:F:VEC)).8b
+	uaddl2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	uaddl2	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	ubfiz	((REG:W:G:64)), ((REG:R:G:64)), 2, 6
+	ubfx	((REG:W:G:64)), ((REG:R:G:64)), 5, 2
+	ucvtf	((REG:W:F:32)), ((REG:W:G:64))
+	ucvtf	((REG:W:F:64)), ((REG:W:G:64))
+	ucvtf	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d
+	ucvtf	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	udiv	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	umax	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	umax	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	umaxv	((REG:W:F:32)), ((REG:R:F:VEC)).4s
+	umaxv	((REG:W:F:8)), ((REG:R:F:VEC)).16b
+	umin	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	uminv	((REG:W:F:8)), ((REG:R:F:VEC)).16b
+	umlal	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2s, ((REG:R:F:VEC)).2s
+	umlal2	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	umov	((REG:W:G:64)), ((REG:W:F:VEC)).d[1]
+	umulh	((REG:W:G:64)), ((REG:R:G:64)), ((REG:R:G:64))
+	umull	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8b, ((REG:R:F:VEC)).8b
+	umull2	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	ushl	((REG:W:F:64)), ((REG:R:F:64)), ((REG:R:F:64))
+	ushl	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2s, ((REG:R:F:VEC)).2s
+	ushll ((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2s, 0
+	ushll ((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4h, 0
+	ushll ((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8b, 0
+	ushll2 ((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).4s, 0
+	ushll2 ((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).8h, 0
+	ushll2 ((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).16b, 0
+	ushr	((REG:W:F:64)), ((REG:R:F:64)), 63
+	ushr	((REG:W:F:VEC)).2d, ((REG:R:F:VEC)).2d, 19
+	ushr	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2s, 1
+	ushr	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, 8
+	usubl	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4h, ((REG:R:F:VEC)).4h
+	usubl2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	usubw2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).8h
+	uzp1	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	uzp1	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	uzp1	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	uzp2	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	uzp2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	uzp2	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	xtn	((REG:W:F:VEC)).2s, ((REG:R:F:VEC)).2d
+	xtn	((REG:W:F:VEC)).4h, ((REG:R:F:VEC)).4s
+	xtn	((REG:W:F:VEC)).8b, ((REG:R:F:VEC)).8h
+	xtn2	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).8h
+	xtn2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).2d
+	xtn2	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).4s
+	zip1	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	zip1	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	zip1	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h
+	zip2	((REG:W:F:VEC)).16b, ((REG:R:F:VEC)).16b, ((REG:R:F:VEC)).16b
+	zip2	((REG:W:F:VEC)).4s, ((REG:R:F:VEC)).4s, ((REG:R:F:VEC)).4s
+	zip2	((REG:W:F:VEC)).8h, ((REG:R:F:VEC)).8h, ((REG:R:F:VEC)).8h

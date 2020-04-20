@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+   db:
+     container_name: ithemal_mysql
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: ithemal
+       MYSQL_DATABASE: ithemal
+
+   ithemal:
+     container_name: ithemal
+     depends_on:
+       - db
+     volumes:
+       - type: bind
+         source: ..
+         target: /home/ithemal/ithemal
+       - type: bind
+         source: /tmp/.X11-unix
+         target: /tmp/.X11-unix
+       - type: bind
+         source: "${HOME}/.aws"
+         target: /home/ithemal/.aws
+     image: ithemal:latest
+     tty: true
+     command: bash -lc "jupyter notebook --ip 0.0.0.0 --port 8888 /home/ithemal/ithemal/learning/pytorch/notebooks --no-browser --NotebookApp.token='ithemal'"
+     environment:
+       MYSQL_HOST: db
+       MYSQL_TCP_PORT: 3306
+       HISTFILE: /home/ithemal/ithemal/docker/.docker_bash_history
+       ITHEMAL_HOME: /home/ithemal/ithemal
+       DISPLAY: ${HOSTNAME}:0
+     ports:
+       - "8888:8888"
+       - "42010:42010"
+
+volumes:
+    db_data:

@@ -1,0 +1,8 @@
+{
+    "inferrer": "partitioning_pmevo",
+    "mapping_cls": "Mapping3",
+    "bin_path": "${PMEVO_BASE}/evo-algo/build/default-pm-evo",
+    "config_path": "${PMEVO_BASE}/evo-algo/run_configs/default.cfg",
+    "equivalence_epsilon": 0.05
+}
+

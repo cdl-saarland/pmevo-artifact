@@ -1,0 +1,310 @@
+ADD ((REG:RW:G:64)), ((IMM:32))
+ADD ((REG:RW:G:64)), ((IMM:8))
+ADD ((REG:RW:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+ADD byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ADD dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+ADD dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ADD qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+ADD qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ADD qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+AND ((REG:RW:G:64)), ((IMM:32))
+AND ((REG:RW:G:64)), ((IMM:8))
+AND ((REG:RW:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+AND byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+AND dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+AND dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+AND qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+AND qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+AND qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+BSF ((REG:W:G:64)), ((REG:R:G:64))
+BSF ((REG:W:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+BSR ((REG:W:G:64)), ((REG:R:G:64))
+BSR ((REG:W:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+BSWAP ((REG:RW:G:64))
+BT ((REG:R:G:64)), ((IMM:8))
+BT ((REG:R:G:64)), ((REG:R:G:64))
+BT dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+BT qword ptr [((MEM:64)) + ((MIMM:16))], ((DIV:64))
+BT qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+BTR ((REG:RW:G:64)), ((IMM:8))
+BTR ((REG:RW:G:64)), ((REG:R:G:64))
+BTR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+BTR qword ptr [((MEM:64)) + ((MIMM:16))], ((DIV:64))
+BTR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+BTS ((REG:RW:G:64)), ((IMM:8))
+BTS ((REG:RW:G:64)), ((REG:R:G:64))
+BTS dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+BTS qword ptr [((MEM:64)) + ((MIMM:16))], ((DIV:64))
+BTS qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+CMP ((REG:R:G:64)), ((IMM:32))
+CMP ((REG:R:G:64)), ((IMM:8))
+CMP ((REG:R:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+CMP byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+CMP dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+CMP dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+CMP qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+CMP qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+CMP qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+INC ((REG:RW:G:64))
+INC byte ptr [((MEM:64)) + ((MIMM:16))]
+INC dword ptr [((MEM:64)) + ((MIMM:16))]
+INC qword ptr [((MEM:64)) + ((MIMM:16))]
+LEA ((REG:W:G:64)),  [((IMM:8))]
+LEA ((REG:W:G:64)),  [((MEM:64)) + ((MIMM:16))]
+LEA ((REG:W:G:64)),  [((MEM:64))+((IMM:8))]
+LEA ((REG:W:G:64)),  [((MEM:64))+2*((DIV:64))+((IMM:8))]
+LEA ((REG:W:G:64)),  [((MEM:64))+2*((DIV:64))]
+LEA ((REG:W:G:64)),  [2*((DIV:64))+((IMM:8))]
+LEA ((REG:W:G:64)),  [2*((DIV:64))]
+MOV ((REG:W:G:64)), ((IMM:32))
+MOV ((REG:W:G:64)), ((IMM:64))
+MOV ((REG:W:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+MOV byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+MOV dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+MOV qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+MOV qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+MOVSX ((REG:W:G:64)), byte ptr [((MEM:64)) + ((MIMM:16))]
+MOVSXD ((REG:W:G:64)), dword ptr [((MEM:64)) + ((MIMM:16))]
+MOVZX ((REG:W:G:64)), byte ptr [((MEM:64)) + ((MIMM:16))]
+NEG ((REG:RW:G:64))
+NEG byte ptr [((MEM:64)) + ((MIMM:16))]
+NEG dword ptr [((MEM:64)) + ((MIMM:16))]
+NEG qword ptr [((MEM:64)) + ((MIMM:16))]
+NOT ((REG:RW:G:64))
+NOT byte ptr [((MEM:64)) + ((MIMM:16))]
+NOT dword ptr [((MEM:64)) + ((MIMM:16))]
+NOT qword ptr [((MEM:64)) + ((MIMM:16))]
+OR ((REG:RW:G:64)), ((IMM:32))
+OR ((REG:RW:G:64)), ((IMM:8))
+OR ((REG:RW:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+OR byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+OR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+OR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+OR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+OR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+OR qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+ROL ((REG:RW:G:64)), ((IMM:8))
+ROL byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ROL dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ROL qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ROR ((REG:RW:G:64)), ((IMM:8))
+ROR byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ROR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+ROR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SAR ((REG:RW:G:64)), ((IMM:8))
+SAR byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SAR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SAR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHL ((REG:RW:G:64)), ((IMM:8))
+SHL byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHL dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHL qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHLD qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64)), ((IMM:8))
+SHR ((REG:RW:G:64)), ((IMM:8))
+SHR byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SHRD qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64)), ((IMM:8))
+SUB ((REG:RW:G:64)), ((IMM:32))
+SUB ((REG:RW:G:64)), ((IMM:8))
+SUB ((REG:RW:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+SUB byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SUB dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+SUB dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SUB qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+SUB qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+SUB qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+TEST ((REG:R:G:64)), ((IMM:32))
+TEST ((REG:R:G:64)), ((REG:R:G:64))
+TEST byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+TEST dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+TEST qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+TEST qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
+VADDPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VADDPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VADDPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VADDPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VANDNPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VANDNPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VANDNPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VANDNPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VANDPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VANDPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VANDPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VANDPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VBLENDVPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VBLENDVPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VBROADCASTSD ((REG:W:V:256)), qword ptr [((MEM:64)) + ((MIMM:16))]
+VBROADCASTSS ((REG:W:V:256)), dword ptr [((MEM:64)) + ((MIMM:16))]
+VCVTDQ2PD ((REG:W:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VCVTDQ2PS ((REG:W:V:256)), ((REG:R:V:256))
+VCVTDQ2PS ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VCVTPS2PD ((REG:W:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VCVTTSD2SI ((REG:W:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+VCVTTSS2SI ((REG:W:G:64)), dword ptr [((MEM:64)) + ((MIMM:16))]
+VDIVPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VDIVPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VDIVPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VDIVPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VEXTRACTF128 xmmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256)), ((IMM:8))
+VEXTRACTI128 xmmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256)), ((IMM:8))
+VINSERTF128 ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VINSERTI128 ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VMAXPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VMAXPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVAPD ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVAPD ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VMOVAPS ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVAPS ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VMOVDDUP ((REG:W:V:256)), ((REG:R:V:256))
+VMOVDDUP ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVDQA ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVDQA ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VMOVDQU ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVDQU ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VMOVUPD ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVUPD ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VMOVUPS ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMOVUPS ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VMULPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VMULPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VMULPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VMULPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VORPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VORPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VORPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VORPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPACKUSDW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPACKUSDW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPACKUSWB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPACKUSWB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPADDB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPADDB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPADDD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPADDD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPADDQ ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPADDQ ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPADDW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPADDW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPALIGNR ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPALIGNR ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VPAND ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPAND ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPANDN ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPANDN ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPAVGB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPAVGB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPBLENDVB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPBLENDVB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:V:256))
+VPBROADCASTB ((REG:W:V:256)), byte ptr [((MEM:64)) + ((MIMM:16))]
+VPBROADCASTD ((REG:W:V:256)), dword ptr [((MEM:64)) + ((MIMM:16))]
+VPCMPEQB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPCMPEQB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPCMPEQD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPCMPEQD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPCMPEQW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPCMPEQW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPCMPGTD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPCMPGTD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPCMPGTW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPCMPGTW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPERM2F128 ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPERM2F128 ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VPERM2I128 ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPERM2I128 ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VPERMD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPERMD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPERMQ ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPERMQ ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VPMADDWD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPMADDWD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMAXSD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPMAXSD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMAXUB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPMAXUB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMINSD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPMINSD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMOVSXDQ ((REG:W:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMOVSXWD ((REG:W:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMOVZXBD ((REG:W:V:256)), qword ptr [((MEM:64)) + ((MIMM:16))]
+VPMOVZXBW ((REG:W:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMOVZXWD ((REG:W:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMULLD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPMULLD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPMULLW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPMULLW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPOR ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPOR ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSADBW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPSADBW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSHUFB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPSHUFB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSHUFD ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSHUFD ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VPSLLD ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSLLD ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSLLDQ ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSLLQ ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSLLQ ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSLLW ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSLLW ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSRAD ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSRAD ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSRAVD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPSRAVD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSRLD ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSRLD ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSRLDQ ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSRLW ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VPSRLW ((REG:W:V:256)), ((REG:R:V:256)), xmmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSUBB ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPSUBB ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSUBD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPSUBD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPSUBW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPSUBW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKHBW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKHBW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKHDQ ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKHDQ ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKHWD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKHWD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKLBW ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKLBW ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKLDQ ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKLDQ ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKLQDQ ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKLQDQ ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPUNPCKLWD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPUNPCKLWD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VPXOR ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VPXOR ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VROUNDPD ((REG:W:V:256)), ((REG:R:V:256)), ((IMM:8))
+VROUNDPD ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VSHUFPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256)), ((IMM:8))
+VSHUFPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+VSQRTPD ((REG:W:V:256)), ((REG:R:V:256))
+VSQRTPD ((REG:W:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VSUBPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VSUBPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VSUBPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VSUBPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VUNPCKHPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VUNPCKHPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VUNPCKLPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VUNPCKLPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VUNPCKLPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VUNPCKLPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VXORPD ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VXORPD ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+VXORPS ((REG:W:V:256)), ((REG:R:V:256)), ((REG:R:V:256))
+VXORPS ((REG:W:V:256)), ((REG:R:V:256)), ymmword ptr [((MEM:64)) + ((MIMM:16))]
+XOR ((REG:RW:G:64)), ((IMM:32))
+XOR ((REG:RW:G:64)), ((IMM:8))
+XOR ((REG:RW:G:64)), qword ptr [((MEM:64)) + ((MIMM:16))]
+XOR byte ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+XOR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+XOR dword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+XOR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:32))
+XOR qword ptr [((MEM:64)) + ((MIMM:16))], ((IMM:8))
+XOR qword ptr [((MEM:64)) + ((MIMM:16))], ((REG:R:G:64))
