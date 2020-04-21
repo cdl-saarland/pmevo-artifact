@@ -2,6 +2,8 @@
 
 Also see the [project website](https://compilers.cs.uni-saarland.de/projects/portmap/) and the [paper](https://compilers.cs.uni-saarland.de/papers/ritter_pmevo_pldi20.pdf).
 
+A pre-built version of this VM is available [here](https://kingsx.cs.uni-saarland.de/owncloud/index.php/s/xXrXJdj7pSngfbS) for download.
+
 This artifact was created to be used as a Vagrant Virtual Machine.
 Usage without the VM is possible, but might require you to apply some steps from `vm_setup/bootstrap.sh` and `vm_setup/post_install.sh`.
 In particular, you need to set the `PMEVO_BASE` environment variable to the absolute path of the `vm_setup/pmevo` directory.
