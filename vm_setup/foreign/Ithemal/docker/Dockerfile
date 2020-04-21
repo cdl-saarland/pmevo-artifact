@@ -52,9 +52,7 @@ RUN /opt/conda/bin/conda install -q -n ithemal -c anaconda \
         cython=0.29 \
         graphviz=2.40.1 \
         ipython=5.8.0 \
-        ipython-notebook=4.0.4 \
         matplotlib=2.2.3 \
-        mysql-connector-python=2 \
         numpy=1.15 \
         pandas=0.23.4 \
         psutil=5.4.7 \
@@ -69,6 +67,10 @@ RUN /opt/conda/bin/conda install -q -n ithemal -c anaconda \
         tqdm=4.28.1 \
         typing=3.6.6 \
         zeromq=4.2.5
+
+RUN /opt/conda/bin/conda install -q -n ithemal -c free \
+        ipython-notebook=4.0.4 \
+        mysql-connector-python=2
 
 RUN /opt/conda/bin/conda install -q -n ithemal -c conda-forge awscli
 
