@@ -53,6 +53,7 @@ make
 
 # set the PMEVO_BASE environment variable
 echo "export PMEVO_BASE=/home/vagrant/pmevo" > /etc/profile.d/pmevo.sh
+export PMEVO_BASE=/home/vagrant/pmevo
 
 # by default, use the faster AVX version of evo-algo
 /home/vagrant/set_avx.sh on
