@@ -47,7 +47,7 @@ def determine_num_total_dynamic_insns(settings, isa):
             tmp_results.append(run_experiment_impl(settings, isa, [i],
                 num_insns_per_iteration=num_insns_per_iteration,
                 num_total_dynamic_insns=testing_num_total_dynamic_insns))
-        time_taken = sum(float(x['time']) / 1000000 for x in tmp_results) / rangeX
+        time_taken = sum(float(x['benchtime']) / 1000000 for x in tmp_results) / rangeX
         min_time = min(min_time, time_taken)
 
     num_total_dynamic_insns = int((settings.loop_target_time / min_time) * testing_num_total_dynamic_insns)
@@ -59,7 +59,7 @@ def determine_num_total_dynamic_insns(settings, isa):
 def determine_num_insns_per_iteration(settings, isa):
     # This requires a reasonable num_total_dynamic_insns in the settings!
     print("Starting to determine the number of instructions per iteration for this machine.")
-    startLLMeasuring = time.clock()
+    startLLMeasuring = time.perf_counter()
 
     assert isa.insnmap is not None
     if settings.preciseStart:
@@ -84,7 +84,7 @@ def determine_num_insns_per_iteration(settings, isa):
     print('Number of instructions per iteration fixed at: {}'.format(minLength))
     res = minLength
 
-    endLLMeasuring = time.clock()
+    endLLMeasuring = time.perf_counter()
     timeLL = endLLMeasuring - startLLMeasuring
     print("Done determining the number of iterations after {} seconds.".format(timeLL))
     return res
